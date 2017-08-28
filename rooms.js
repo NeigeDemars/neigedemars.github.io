@@ -16,7 +16,7 @@ var rooms = {
             "start": "start"
         },
         "items": {
-            "strange eye": "Это... это глаз?"
+            "strange eye": "Это.. это глаз?"
         }
     },
     "lighthouse": {
