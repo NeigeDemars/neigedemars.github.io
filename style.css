@@ -1,0 +1,40 @@
+@font-face {
+  font-family: Kremlin;
+  src: url(kremlin.ttf);
+}
+
+body {
+	background-color: black;
+	background-image: url("1.png");
+	background-repeat: repeat;
+	background-size: 50%, cover;
+}
+
+
+img {
+  opacity: 0.5;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+canvas {
+	display: block;
+	margin-top: 3%;
+	margin-left: auto;
+    margin-right: auto;
+    border: 2px solid white;
+}
+
+#title {
+	margin-left: auto;
+    margin-right: auto;
+	width: 500px;
+	text-align: center;
+	font-size: 72px;
+	color: maroon;
+	font-family: Kremlin;
+	font-weight: bold;
+	margin-top: 55px;
+	margin-bottom: 10px;
+	background-color: black;
+	border: 2px solid white;
+}
