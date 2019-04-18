@@ -68,18 +68,14 @@ function destroyAsteroid(index){
 
 	//split the asteroid in two if nesessery
 	if (r == Math.ceil(ROIDS_SIZE / 2)) {
-		score += 50;
 		roids.push(newAsteroid(x, y, Math.ceil(ROIDS_SIZE / 4)));
 		roids.push(newAsteroid(x, y, Math.ceil(ROIDS_SIZE / 4)));
 	} else if (r == Math.ceil(ROIDS_SIZE / 4)) {
-		score += 25;
 		roids.push(newAsteroid(x, y, Math.ceil(ROIDS_SIZE / 8)));
 		roids.push(newAsteroid(x, y, Math.ceil(ROIDS_SIZE / 8)));
 	}
-
 	// destroy the asteroid
 	roids.splice(index, 1);
-	score += 15;
 }
 
 function distBetweenPoints(x1,y1,x2,y2){
@@ -427,11 +423,11 @@ function update(){
 			ctx.beginPath();
 			ctx.arc(ship.lasers[i].x, ship.lasers[i].y, ship.r * 0.75, 0, Math.PI *2, false);
 			ctx.fill();
-			ctx.fillStyle = "orange";
+			ctx.fillStyle = "yellow";
 			ctx.beginPath();
 			ctx.arc(ship.lasers[i].x, ship.lasers[i].y, ship.r * 0.50, 0, Math.PI *2, false);
 			ctx.fill();
-			ctx.fillStyle = "yellow";
+			ctx.fillStyle = "red";
 			ctx.beginPath();
 			ctx.arc(ship.lasers[i].x, ship.lasers[i].y, ship.r * 0.25, 0, Math.PI *2, false);
 			ctx.fill();
